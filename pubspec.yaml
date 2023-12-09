@@ -17,6 +17,7 @@ dependencies:
   retrofit: ^4.0.3
   auto_route: ^7.8.4
   fl_chart: ^0.65.0
+  syncfusion_flutter_charts: ^23.2.7
 
 dev_dependencies:
   flutter_test:
@@ -26,6 +27,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  assets:
-    - assets/icons
-    - assets/images
+  # assets:
+  #   # - assets/icons
+  #   # - assets/images

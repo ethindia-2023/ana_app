@@ -1,24 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/sparkcharts.dart';
 
-class Ananlytics extends StatelessWidget {
-  const Ananlytics({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Scaffold(
-        body: Column(
-          children: [
-            LineGraph(),
-            BarGraph(),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 class LineGraph extends StatelessWidget {
   const LineGraph({super.key});
 
@@ -68,7 +50,12 @@ class LineGraph extends StatelessWidget {
 }
 
 class BarGraph extends StatelessWidget {
-  const BarGraph({super.key});
+  const BarGraph({
+    required this.data,
+    super.key,
+  });
+
+  final List<double> data;
 
   @override
   Widget build(BuildContext context) {
@@ -88,36 +75,7 @@ class BarGraph extends StatelessWidget {
           // highPointColor: Colors.black,
           color: Colors.purple,
           axisLineWidth: 2,
-          data: const <double>[
-            1,
-            5,
-            6,
-            0,
-            1,
-            2,
-            7,
-            7,
-            4,
-            10,
-            6,
-            7,
-            5,
-            11,
-            5,
-            3,
-            0,
-            1,
-            2,
-            7,
-            7,
-            4,
-            6,
-            7,
-            5,
-            11,
-            5,
-            3
-          ],
+          data: data,
         ),
       ),
     );

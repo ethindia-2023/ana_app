@@ -1,7 +1,4 @@
-import 'package:ana_app/presentation/analytics/analytics.dart';
-import 'package:ana_app/presentation/components/bar_graph/bar_graph.dart';
-import 'package:ana_app/presentation/components/circular_slider_box/circular_slider_box.dart';
-import 'package:ana_app/presentation/components/line_graph/line_graph.dart';
+import 'package:ana_app/presentation/projects/projects.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Analytics(),
+      home: Projects(),
     );
   }
 }
